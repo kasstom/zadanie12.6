@@ -1,40 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
+<html>
+<head>
+    <meta charset="utf-8">
     <title>Country search engine</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="style/style.css">
-  </head>
-  <body>
-    <main>
-      <header>
-          <h1>Country search engine</h1>
-      </header>
-      <input id="country-name" type="text" />
-      <button id="search" class="search">Search a country</button>
-      <br>
-      <h2>List of countries</h2>
-      <br>
-      <table>
-        <thead>
-          <td>Country</td>
-          <td>capital</td>
-          <td>region</td>
-          <td>currency</td>
-          <td>symbol</td>
-        </thead>
-        <tr id="countries-row">
-          <th id="country"></th>
-          <td id="capital"></td>
-          <td id="region"></td>
-          <td id="currency"></td>
-          <td id="symbol"></td>
-        </tr>
-      </table>
-      </div>
-    </main>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script type="text/javascript" src="js/scripts.js"></script>
-  </body>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body class="text-center">
+    <h1 class="text-uppercase">Country search engine</h1>
+    <div class="form">
+        <input class="form-control" id="country-name" type="text" placeholder="Name of a country" />
+    </div>
+    <button class="btn btn-primary" id="search">Search a country</button>
+    <h2>List of countries</h2>
+    <ul id="countries">
+      <li></li>
+    </ul>
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
 </html>
